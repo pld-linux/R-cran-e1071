@@ -4,13 +4,14 @@ Summary:	Misc Functions of the Department of Statistics (e1071), TU Wien
 Summary:	Ró¿ne funkcje ministerstwa statystyk(e1071), TU, Wiedeñ
 Name:		R-cran-%{modulename}
 Version:	1.5r1
-Release:	2
+Release:	3
 License:	GPL version 2. See COPYRIGHT.svm.cpp for the copyright of the svm C++ code.
 Group:		Applications/Math
 Source0:	ftp://stat.ethz.ch/R-CRAN/src/contrib/%{modulename}_%{fversion}.tar.gz
 # Source0-md5:	5f0a033bb84d4be58575b3eb9549d53f
 BuildRequires:	R-base >= 2.0.0
-BuildRequires:	R-cran-class
+# should be BR: R-cran-class, but our builders doesn't support BR: foo after Provides: foo
+BuildRequires:	R-cran-VR
 Requires(post,postun):	R-base >= 2.0.0
 Requires(post,postun):	perl-base
 Requires(post,postun):	textutils
