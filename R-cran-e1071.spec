@@ -1,11 +1,11 @@
 %define		fversion	%(echo %{version} |tr r -)
 %define		modulename	e1071
 Summary:	Misc Functions of the Department of Statistics (e1071), TU Wien
-Summary(pl):	Ró¿ne funkcje Wydzia³u Statystyki (e1071), Politechnika Wiedeñska
+Summary(pl):	Ró¿ne funkcje Wydzia³u Statystyki (e1071) Politechniki Wiedeñskiej
 Name:		R-cran-%{modulename}
 Version:	1.5r1
 Release:	3
-License:	GPL version 2. See COPYRIGHT.svm.cpp for the copyright of the svm C++ code.
+License:	GPL v2. See COPYRIGHT.svm.cpp for the copyright of the svm C++ code.
 Group:		Applications/Math
 Source0:	ftp://stat.ethz.ch/R-CRAN/src/contrib/%{modulename}_%{fversion}.tar.gz
 # Source0-md5:	5f0a033bb84d4be58575b3eb9549d53f
@@ -26,7 +26,7 @@ bagged clustering, naive Bayes classifier, ...
 %description -l pl
 Funkcje do analizy klas, szybkiej transformaty Fouriera, rozmytego
 klastrowania, obs³ugi maszyn wektorowych, obliczenia najkrótszych
-¶cie¿ek, naiwnej klasyfikacji Baysa, ...
+¶cie¿ek, naiwnej klasyfikacji Bayesa...
 
 %prep
 %setup -q -c
