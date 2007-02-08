@@ -4,15 +4,15 @@ Summary:	Misc Functions of the Department of Statistics (e1071), TU Wien
 Summary(pl):	Ró¿ne funkcje Wydzia³u Statystyki (e1071) Politechniki Wiedeñskiej
 Name:		R-cran-%{modulename}
 Version:	1.5r1
-Release:	3
+Release:	4
 License:	GPL v2. See COPYRIGHT.svm.cpp for the copyright of the svm C++ code.
 Group:		Applications/Math
 Source0:	ftp://stat.ethz.ch/R-CRAN/src/contrib/%{modulename}_%{fversion}.tar.gz
 # Source0-md5:	5f0a033bb84d4be58575b3eb9549d53f
-BuildRequires:	R-base >= 2.0.0
+BuildRequires:	R-base >= 2.4.0
 # should be BR: R-cran-class, but our builders doesn't support BR: foo after Provides: foo
 BuildRequires:	R-cran-VR
-Requires(post,postun):	R-base >= 2.0.0
+Requires(post,postun):	R-base >= 2.4.0
 Requires(post,postun):	perl-base
 Requires(post,postun):	textutils
 Requires:	R-cran-class
@@ -40,12 +40,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %post
 (cd %{_libdir}/R/library; umask 022; cat */CONTENTS > ../doc/html/search/index.txt
- R_HOME=%{_libdir}/R ../bin/Rcmd perl ../share/perl/build-help.pl --htmllist)
+ R_HOME=%{_libdir}/R ../bin/Rcmd perl ../share/perl/build-help.pl --index)
 
 %postun
 if [ -f %{_libdir}/R/bin/Rcmd ];then
 	(cd %{_libdir}/R/library; umask 022; cat */CONTENTS > ../doc/html/search/index.txt
-	R_HOME=%{_libdir}/R ../bin/Rcmd perl ../share/perl/build-help.pl --htmllist)
+	R_HOME=%{_libdir}/R ../bin/Rcmd perl ../share/perl/build-help.pl --index)
 fi
 
 %files
