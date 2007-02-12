@@ -1,7 +1,7 @@
 %define		fversion	%(echo %{version} |tr r -)
 %define		modulename	e1071
 Summary:	Misc Functions of the Department of Statistics (e1071), TU Wien
-Summary(pl.UTF-8):   Różne funkcje Wydziału Statystyki (e1071) Politechniki Wiedeńskiej
+Summary(pl.UTF-8):	Różne funkcje Wydziału Statystyki (e1071) Politechniki Wiedeńskiej
 Name:		R-cran-%{modulename}
 Version:	1.5r1
 Release:	4
