@@ -1,7 +1,7 @@
 %define		fversion	%(echo %{version} |tr r -)
 %define		modulename	e1071
 Summary:	Misc Functions of the Department of Statistics (e1071), TU Wien
-Summary(pl):	RÛøne funkcje Wydzia≥u Statystyki (e1071) Politechniki WiedeÒskiej
+Summary(pl.UTF-8):   R√≥≈ºne funkcje Wydzia≈Çu Statystyki (e1071) Politechniki Wiede≈Ñskiej
 Name:		R-cran-%{modulename}
 Version:	1.5r1
 Release:	4
@@ -23,10 +23,10 @@ Functions for latent class analysis, short time Fourier transform,
 fuzzy clustering, support vector machines, shortest path computation,
 bagged clustering, naive Bayes classifier, ...
 
-%description -l pl
+%description -l pl.UTF-8
 Funkcje do analizy klas, szybkiej transformaty Fouriera, rozmytego
-klastrowania, obs≥ugi maszyn wektorowych, obliczenia najkrÛtszych
-∂cieøek, naiwnej klasyfikacji Bayesa...
+klastrowania, obs≈Çugi maszyn wektorowych, obliczenia najkr√≥tszych
+≈õcie≈ºek, naiwnej klasyfikacji Bayesa...
 
 %prep
 %setup -q -c
