@@ -9,13 +9,11 @@ License:	GPL v2. See COPYRIGHT.svm.cpp for the copyright of the svm C++ code.
 Group:		Applications/Math
 Source0:	ftp://stat.ethz.ch/R-CRAN/src/contrib/%{modulename}_%{fversion}.tar.gz
 # Source0-md5:	5f0a033bb84d4be58575b3eb9549d53f
-BuildRequires:	R-base >= 2.4.0
-# should be BR: R-cran-class, but our builders doesn't support BR: foo after Provides: foo
-BuildRequires:	R-cran-VR
-Requires(post,postun):	R-base >= 2.4.0
+BuildRequires:	R >= 2.8.1
+Requires(post,postun):	R >= 2.8.1
 Requires(post,postun):	perl-base
 Requires(post,postun):	textutils
-Requires:	R-cran-class
+Requires:	R
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
