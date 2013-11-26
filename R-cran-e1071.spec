@@ -3,12 +3,12 @@
 Summary:	Misc Functions of the Department of Statistics (e1071), TU Wien
 Summary(pl.UTF-8):	Różne funkcje Wydziału Statystyki (e1071) Politechniki Wiedeńskiej
 Name:		R-cran-%{modulename}
-Version:	1.5r1
-Release:	4
+Version:	1.6r1
+Release:	1
 License:	GPL v2. See COPYRIGHT.svm.cpp for the copyright of the svm C++ code.
 Group:		Applications/Math
 Source0:	ftp://stat.ethz.ch/R-CRAN/src/contrib/%{modulename}_%{fversion}.tar.gz
-# Source0-md5:	5f0a033bb84d4be58575b3eb9549d53f
+# Source0-md5:	cdc77694de66523f05634f58b0eb3128
 BuildRequires:	R >= 2.8.1
 Requires(post,postun):	R >= 2.8.1
 Requires(post,postun):	perl-base
